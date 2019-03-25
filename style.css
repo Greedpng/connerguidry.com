@@ -24,7 +24,7 @@ body {
 	letter-spacing: .1rem;
 	background-color: rgba(0, 0, 0, 0.8)!important;
 }
-.navbar-logo img {
+.navbar-brand img {
 	height: 2rem;
 }
 .navbar-nav li {
