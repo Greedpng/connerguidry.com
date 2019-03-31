@@ -15,6 +15,22 @@ body {
 	height: 4rem;
 	margin-top: -3.5rem;
 }
+.btn-return {
+	border-width: medium;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: .3rem .6rem;
+	margin: 1rem;
+	color: white;
+	background-color: #65ccb8;
+	border-color: #65ccb8;
+}
+.btn-return:hover {
+	color: #EFF;
+	background-color: #57ba98;
+	border-color: #57ba98;
+}
 
 /* Navigation */
 .navbar {
@@ -126,6 +142,20 @@ h3.heading {
 }
 .feature p {
 	font-size: 1.1rem;
+}
+.album-link{
+	border-width: medium;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	padding: .6rem 1.2rem;
+	margin: 1rem;
+	color: white;
+	background-color: #899996;
+}
+.album-link:hover {
+	color: white;
+	background-color: #65AA9D;
 }
 
 /* Contact */

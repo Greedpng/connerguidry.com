@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gallery</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+</head>
+<body data-spy="scroll" data-target="#navBarResponsive">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navBarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#pictures">Pictures</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About Me</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- End Navigation -->
+
+<!-- Gallery Start -->
+<div class="container gallery-container">
+
+    <h1>Gallery</h1>
+    <p class="page-description text-center">Click on image to zoom</p>
+    
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/testing/park.jpg">
+                    <img src="https://i.imgur.com/1IqG2Ff.png">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/testing/bridge.jpg">
+                    <img src="https://i.imgur.com/jcwebux.png">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="img/testing/tunnel.jpg">
+                    <img src="https://i.imgur.com/axBptrT.png">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/testing/rails.jpg">
+                    <img src="https://i.imgur.com/vQ05ee4.png">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/testing/traffic.jpg">
+                    <img src="https://i.imgur.com/8M0BtsT.png">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="img/testing/rocks.jpg">
+                    <img src="https://i.imgur.com/ozE2l01.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->
+
+<!-- Footer -->
+<footer>
+    <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+            <img src="img/logo.png">
+            <br>
+            <strong>Contact Info</strong>
+            <p>(615) 636-1045 <br> guidryconner@gmail.com</p>
+        </div>
+    </div>
+    <hr class="socket">
+    <center>Copyright &copy; 2019 Conner Guidry - All Rights Reserved.</center>
+</footer>
+<!-- End Footer -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
