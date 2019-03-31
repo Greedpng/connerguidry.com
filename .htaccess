@@ -1,1 +1,3 @@
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
