@@ -69,7 +69,12 @@
 				<h3 class="heading text-center">Pictures</h3>
 				<div class="heading-underline"></div>
 				[Examples Slideshow] <br>
-				<a class="btn btn-secondary btn-md" href="#">View Albums</a>
+				<button class="btn btn-secondary btn-md slider-btn" href="#">View Albums</button>
+				<div class="slider-div text-center">
+					<a href="photographyGallery.html" class="btn album-link">Photography</a>
+					<a href="#" class="btn album-link">Design</a>
+					<a href="#" class="btn album-link">Photoshop</a>
+				</div>
 			</div>
 	</div>
 </div>
@@ -147,6 +152,16 @@
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <!-- End of Script Source Files -->
+
+<script>
+	$(document).ready(function(){
+	$(".slider-div").slideToggle(0);
+
+	  $(".slider-btn").click(function(){
+	    $(".slider-div").slideToggle();
+	  });
+	});
+</script>
 
 </body>
 </html>
