@@ -235,6 +235,7 @@ hr.socket {
 		font-size: 1.5rem;
 	}
 	.aboutMe img {
+		width: 50%;
 		max-width: 50%;
 		display: block;
 		margin: 0 auto;
