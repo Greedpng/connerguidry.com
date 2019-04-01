@@ -145,6 +145,7 @@ h3.heading {
 }
 .album-link{
 	border-width: medium;
+	width: 12.5rem;
 	border-radius: 0;
 	text-transform: uppercase;
 	font-size: 1.2rem;
