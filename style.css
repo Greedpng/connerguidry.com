@@ -105,12 +105,13 @@ body {
 	padding: .6rem 1.2rem;
 	margin: 1rem;
 	color: white;
-	background-color: #65ccb8;
-	border-color: #65ccb8;
+	background-color: #65ccb8!important;
+	border-color: #65ccb8!important;
+	opacity: 1!important;
 }
 .btn-secondary:hover {
-	background-color: #57ba98;
-	border-color: #57ba98;
+	background-color: #57ba98!important;
+	border-color: #57ba98!important;
 }
 
 /* Pictures */
