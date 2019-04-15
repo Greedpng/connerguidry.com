@@ -185,9 +185,32 @@ h3.heading {
 .aboutMe-hr {
 	border-top: .05rem solid #65ccb8;
 }
-blockquote svg.svg-inline--fa {
-	color: #65ccb8;
+.btn-contact {
+	border-width: medium;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: .9rem;
+	padding: .3rem .6rem;
 	margin: 1rem;
+	color: white;
+	background-color: #899996!important;
+	border-color: #899996!important;
+	opacity: 1!important;
+}
+.btn-contact:hover {
+	color: white;
+	background-color: #65AA9D!important;
+	border-color: #65AA9D!important;
+}
+
+.aboutLink {
+	color: #65AA9D;
+	transition-duration: 0.4s;
+}
+.aboutLink:hover {
+	color: #899996;
+	text-decoration: none;
+	transition-duration: 0.4s;
 }
 
 /* Footer */
