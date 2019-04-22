@@ -176,6 +176,9 @@ h3.heading {
 .fixed-background p {
 	margin-top: 1.5rem;
 }
+.help-block {
+	color: red;
+}
 
 /* About Me */
 .aboutMe img {
