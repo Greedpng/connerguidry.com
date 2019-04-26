@@ -11,9 +11,25 @@
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fixed.css">
+	<link rel="stylesheet" href="css/hubinfo.css">
 </head>
 
 <body data-spy="scroll" data-target="#navBarResponsive">
+
+<script>
+	//Preload images
+	$(document).ready(function() {
+		var i, link, image;
+	    for ( i = 0; i < links.length; i++ ) {
+	        link = links[i];
+	        image = new Image();
+	        image.src = link.getAttribute("href");
+	        image.title = link.getAttribute("title");
+	        imageCache[imageCache.length] = image;
+	    }
+	});
+	
+</script>
 
 <!-- Home Section -->
 <div id="home">
@@ -35,6 +51,7 @@
 			<li class="nav-item"><a class="nav-link" href="#pictures">Pictures</a></li>
 			<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 			<li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+			<li class="nav-item"><a class="nav-link" href="hardware.html">Hardware</a></li>
 		</ul>
 	</div>
 </nav>
@@ -49,6 +66,25 @@
 
 <div class="caption text-center">
 	<h1>Welcome to My Website!</h1>
+
+	<div>You've loaded this page <span id="counter"></span> times!</div>
+	<div>Page loaded on: <span id="datetime"></span></div>
+	<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleString();
+	</script>
+	<script>
+		var n = localStorage.getItem('on_load_counter');
+		if (n === null) {
+		    n = 0;
+		}
+		n++;
+		localStorage.setItem("on_load_counter", n);
+		document.getElementById('counter').innerHTML = n;
+	</script>
+
+	<br>
+
 	<a class="btn btn-outline-light btn-lg" href="#projects">Check out my projects</a>
 </div>
 <!-- End Landing Page -->
@@ -184,7 +220,7 @@
 			<div class="col-md-6 aboutMe">
 				<div class="row">
 					<div class="col-md-4">
-						<img src="img/placeholder.png">
+						<img src="img/me.jpg">
 					</div>
 					<div class="col-md-8">
 						<p>I am a student at Lipscomb University studying web development. I enjoy the nice mix of programming and design that goes into web development, which allows me to create something functional while still giving me room to be creative. All the images on this site were made by me using my camera, Adobe Photoshop, and Adobe Illustrator.</p>
@@ -194,7 +230,7 @@
 			<div class="col-md-6 aboutMe">
 				<div class="row">
 					<div class="col-md-4">
-						<img src="img/placeholder.png">
+						<img src="img/desk.jpg">
 					</div>
 					<div class="col-md-8">
 						<p>Outside of school and work, I'm a hobbyist photographer, PC builder, and tinkerer. I've put a lot of time into researching hardware for my PC, which I've upgraded many times and added to my collection of accessories. I find topics about how computer hardware works interesting, so I've looked for the best internal components, audio hardware, keyboard, mouse, and monitors that are in my budget. I have a list of my current hardware <a href="hardware.html" class="aboutLink">here</a> if you're curious.</p>
@@ -226,11 +262,8 @@
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <script src="js/contact.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-<script src="contact.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/contact.js"></script>
 <!-- End of Script Source Files -->
 
 <script>
